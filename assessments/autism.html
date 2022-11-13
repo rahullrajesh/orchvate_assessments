@@ -1,0 +1,132 @@
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>Orchvate</title>
+   <link rel="shortcut icon" href="../img/favicon.ico">
+   <!-- Google font -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+   <!-- Bootstrap -->
+   <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+   <!-- Owl Carousel -->
+   <link type="text/css" rel="stylesheet" href="../css/owl.carousel.css" />
+   <link type="text/css" rel="stylesheet" href="../css/owl.theme.default.css" />
+   <!-- Magnific Popup -->
+   <link type="text/css" rel="stylesheet" href="../css/magnific-popup.css" />
+   <!-- Font Awesome Icon -->
+   <link rel="stylesheet" href="../css/font-awesome.min.css">
+   <!-- Custom stlylesheet -->
+   <link type="text/css" rel="stylesheet" href="../css/style.css" />
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DQG5TD1M5"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-1DQG5TD1M5');
+   </script>
+</head>
+<body>
+   <!-- Portfolio -->
+   <div id="doctine" class="section bg-grey">
+      <!-- Nav -->
+      <nav id="nav_other" class="navbar-other nav-transparent-other">
+         <div class="container">
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a href="http://www.orchvate.com">
+                     <img class="logo" src="logo format 1.png" alt="logo">
+                     </a>
+               </div>
+               <!-- /Logo -->
+               <!-- Collapse nav button -->
+               <div class="nav-collapse">
+                  <span></span>
+               </div>
+               <!-- /Collapse nav button -->
+               <!-- /Collapse nav button -->
+            </div>
+            <!--  Main navigation 
+               <ul style="position:relative", class=" nav navbar-nav navbar-right">
+               	<li><a href="./index.html",target="_blank", style="color:black">Home</a></li>
+               </ul>
+               <!-- /Main navigation -->
+         </div>
+      </nav>
+      <!-- /Nav -->
+      <!-- Container -->
+      <div id="divContainerQuestions" class="container">
+         <div class="row">
+            <!-- Section header -->
+            <div class="section-header text-center">
+               <h2 class="title">Self Assessment - Autism Spectrum Quotient Questionnaire</h2>
+            </div>
+            <!-- /Section header -->
+            <h3>Instructions</h3>
+            <p> For each of the statements respond with any of the following : <b> Definitely Agree, Slightly Agree, Slightly Disagree, Definitely Disagree </b>.
+            <hr>
+            <div class = "questions">
+               <table>
+                  <tbody>
+                  </tbody>
+               </table>
+			   <div class="col-md-4"></div>
+			   <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
+						<button id="assessScore" onclick="calculateAutismScore()" class="main-btn">Evaluate</button>
+						<button id="reAssessScore" onclick="reEvaluateAutismScore()" style="display: none;" class="main-btn">Re-evaluate</button>
+				</div>
+				<div class="col-md-4"></div>
+			   <div id="scoringMethodology" style="display: none;clear:both;">
+               <hr>
+               <h3>Scores</h3>
+               <div class="col-md-12">
+			   <label for="score">Your Score:</label><input type="text" id="score" name="score" disabled>
+			   <br>
+			   <p style="clear:both"> Interpretaion of the scores: </p>
+               <img class="center" src = "../img/assessments/scoring_2.png"></img>
+			   </div>
+              
+               <br>
+			   </div>
+            </div>
+            <div id="thankYouDiv" class="col-md-12" style="text-align: center; margin-bottom:4%;display: none;">
+			   <br>
+			   Feel free to contact us at info@orchvate.com with respect to any queries
+			   <br>
+               Thank you!
+            </div>
+         </div>
+      </div>
+      <!-- /Container -->
+   </div>
+   <!-- /Portfolio -->
+   <!-- Back to top -->
+   <div id="back-to-top"></div>
+   <!-- /Back to top -->
+   <!-- Preloader -->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   <!-- /Preloader -->
+   <!-- jQuery Plugins -->
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+   <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
+   <script type="text/javascript" src="../js/main.js"></script>
+   <script type="text/javascript" src="../js/autismQuestionnaire.js"></script>
+   <script>
+      $(document).ready(function(){
+      setAutismQuestionnaire();
+      });
+   </script>
+</body>
+</html>
