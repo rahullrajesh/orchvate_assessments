@@ -66,35 +66,200 @@
             </div>
             <!-- /Section header -->
             <h3>Instructions</h3>
-            <p> For each of the statements given below, respond with any one of the following : <b> Never, Rarely, Sometimes, Often, Very Often </b>. Click Evaluate to view the results.
+            <p>This self-assessment does not count as a diagnosis; it can help you to find out if you have any traits of ADHD. This will also give you a better understanding of how your brain works and for which tasks you may need additional support.</p>    
+            <p>The assessment is adapted from the Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist that was developed in conjunction with the World Health Organization (WHO), and the Workgroup on Adult ADHD. </p>
+            <p>The questions are consistent with DSM-IV criteria and address the manifestations of ADHD symptoms in adults. Six of the questions that were found to be the most predictive of symptoms consistent with ADHD form Part A. Part B contains the remaining twelve questions, that describe common ADHD symptoms.</p>           
             <hr>
-            <div class = "questions">
-               <table>
-                  <tbody>
-                  </tbody>
-               </table>
-			   <div class="col-md-4"></div>
-			   <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-						<button id="assessScore" onclick="calculateADHDScore()" class="main-btn">Evaluate</button>
-						<button id="reAssessScore" onclick="reEvaluateADHDScore()" style="display: none;" class="main-btn">Re-evaluate</button>
-				</div>
-				<div class="col-md-4"></div>
-			   <div id="scoringMethodology" style="display: none;clear:both">
-               <hr>
-               <h3>Scoring</h3>
-               <p> Follow the table below to score yourself: </p>
-               <img class="center" src = "adhd_scoring.png"></img>
-               <br>
-               <div class="col-md-4"></div>
-               <div class="col-md-4">
-                  <label for="score">Total Score:</label><input type="text" id="score" name="score" disabled>
+            <div class="container">
+               <div class="col-sm-12">
+                  <div class="mm-survey">
+         
+                     <div class="mm-survey-progress">
+                        <div class="mm-survey-progress-bar mm-progress"></div>
+                     </div>
+         
+                     <div class="mm-survey-results">
+                        <div class="mm-survey-results-container">
+                           <h3 class="mm-survey-results-score"></h3>
+                           <ul class="mm-survey-results-list"></ul>
+                        </div>
+                        <div class="mm-survey-results-controller">
+                           <div class="mm-back-btn">
+                              <button>Back</button>
+                           </div>
+                        </div>
+                     </div>
+         
+                     <div class="mm-survey-bottom">
+                        <div class="mm-survey-container">
+         
+                           <div class="mm-survey-page active" data-page="1">
+                              <div class="mm-survery-content">
+         <h3 id="description">
+            Section 1 (Personal Information)</h3>
+         
+         <form id="survey-form">
+         
+         <div class="input-headings">
+           
+           <label for="name" id="name-label"> Name (Not Mandatory) </label>
+           <input id="name" type="text" name="name" placeholder="Enter your name here" class="form-inputs" required> </input>   
+         <br>        
+           <label for="email" id="email-label"> Email </label>
+           <input id="email" type="email" name="email" placeholder="Enter here" class="form-inputs" required> </input>
+         <br>
+           
+         
+         <label for="dropdown" id="model" style="width: 90vw;"> Age </label>
+           <select id="dropdown" >
+            <option value="" disabled selected>Select your option</option>
+             <option value = "Model_S"> 18-25 </option>
+             <option value = "Model_3"> 26-35 </option>
+             <option value = "Model_X"> 36–45 </option>
+             <option value = "Model_Y"> 46–55 </option>
+             <option value = "Cyber_Truck">Above 55</option>
+           </select>
+         <br>
+         <br>
+         <label for="dropdown" id="model" style="width: 90vw;"> Gender </label>
+         <select id="dropdown">
+            <option value="" disabled selected>Select your option</option>
+           <option value = "Model_S"> Male </option>
+           <option value = "Model_3"> Female </option>
+           <option value = "Cyber_Truck">Others</option>
+         </select>
+        
+         <br>
+         <br>
+                                    
+         <label for="features"> <b>Function/Domain</b></label>
+         <select id="dropdown">
+            <option value="" disabled selected>Select your option</option>
+            <option value = "Model_S"> Tech</option>
+            <option value = "Model_3"> Non-Tech</option>
+            
+          </select>
+          
+         
+           
+        
+         
+           </div>
+           
+         </form>
+                                 
+                              </div>
+                           </div>
+                           <div class="mm-survey-page" data-page="2">
+                              <div class="mm-survery-content">
+                                 <div class = "questions">
+                                    <table>
+                                       <tbody>
+                                       </tbody>
+                                    </table>
+                                 <div class="col-md-4"></div>
+                                 <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
+                                       <button id="assessScore" onclick="calculateAutismScore()" class="main-btn">Evaluate</button>
+                                       <button id="reAssessScore" onclick="reEvaluateAutismScore()" style="display: none;" class="main-btn">Re-evaluate</button>
+                                 </div>
+                                 <div class="col-md-4"></div>
+                                 <div id="scoringMethodology" style="display: none;clear:both;">
+                                    <hr>
+                                    <h3>Scores</h3>
+                                    <div class="col-md-12">
+                                 <label for="score">Your Score:</label><input type="text" id="score" name="score" disabled>
+                                 <br>
+                                 <p style="clear:both"> Interpretaion of the scores: </p>
+                                    <img class="center" src = "scoring_2.png"></img>
+                                 </div>
+                                   
+                                    <br>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mm-survey-page" data-page="3">
+                              <div class="mm-survery-content">
+                                 <div class="mm-survey-question">
+                                    <p>Which is the correct integer for Pi?</p>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio09" data-item="3" name="radio3" value="3" />
+                                    <label for="radio09"><span></span><p>3</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio10" data-item="3" name="radio3" value="4" />
+                                    <label for="radio10"><span></span><p>4</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio11" data-item="3" name="radio3" value="3.41" />
+                                    <label for="radio11"><span></span><p>3.41</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio12" data-item="3" name="radio3" value="3.14" />
+                                    <label for="radio12"><span></span><p>3.14</p></label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mm-survey-page" data-page="4">
+                              <div class="mm-survery-content">
+                                 <div class="mm-survey-question">
+                                    <p>The letter 'C' is the nth number in the alphabet, choose the correct number.</p>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio13" data-item="4" name="radio4" value="1" />
+                                    <label for="radio13"><span></span><p>1</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio14" data-item="4" name="radio4" value="2" />
+                                    <label for="radio14"><span></span><p>2</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio15" data-item="4" name="radio4" value="3" />
+                                    <label for="radio15"><span></span><p>3</p></label>
+                                 </div>
+                                 <div class="mm-survey-item">
+                                    <input type="radio" id="radio16" data-item="4" name="radio4" value="4" />
+                                    <label for="radio16"><span></span><p>4</p></label>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- <div class="mm-survey-page" data-page="5">
+                              <div class="mm-survery-content">
+         
+                              </div>
+                           </div>
+                           <div class="mm-survey-page" data-page="6">
+                              <div class="mm-survery-content">
+         
+                              </div>
+                           </div>
+                           <div class="mm-survey-page" data-page="7">
+                              <div class="mm-survery-content">
+         
+                              </div>
+                           </div> -->
+         
+                        </div>
+         
+                        <div class="mm-survey-controller">
+                           <div class="mm-prev-btn">
+                              <button>Prev</button>
+                           </div>
+                           <div class="mm-next-btn">
+                              <button >Next</button>
+                           </div>
+                           <div class="mm-finish-btn">
+                              <button>Submit</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-4"></div>
-               <h5 style="clear:both"> Interpretation of the scores: </h5>
-			   <p>4 or more responses in the shaded boxes indicate person has symptoms highly consistent with ADHD in adults.</p>
-               
-               <br></div>
             </div>
+            <hr>
+
+
             <div id="thankYouDiv" class="col-md-12" style="text-align: center; margin-bottom:4%;display: none;">
                Thank you!
             </div>
