@@ -152,77 +152,291 @@
                            </div>
                            <div class="mm-survey-page" data-page="2">
                               <div class="mm-survery-content">
-                                 <div class = "questions">
-                                    <table>
-                                       <tbody>
-                                       </tbody>
-                                    </table>
-                                 <div class="col-md-4"></div>
-                                 <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-                                       <button id="assessScore" onclick="calculateAutismScore()" class="main-btn">Evaluate</button>
-                                       <button id="reAssessScore" onclick="reEvaluateAutismScore()" style="display: none;" class="main-btn">Re-evaluate</button>
-                                 </div>
-                                 <div class="col-md-4"></div>
-                                 <div id="scoringMethodology" style="display: none;clear:both;">
-                                    <hr>
-                                    <h3>Scores</h3>
-                                    <div class="col-md-12">
-                                 <label for="score">Your Score:</label><input type="text" id="score" name="score" disabled>
-                                 <br>
-                                 <p style="clear:both"> Interpretaion of the scores: </p>
-                                    <img class="center" src = "scoring_2.png"></img>
-                                 </div>
+                                 <h3 id="description">
+                                    Section 2 (Questions Part A)</h3>
+                                 
+                                 <form id="survey-form">
+                                 
+                                 <div class="input-headings">
                                    
-                                    <br>
-                                 </div>
-                                 </div>
-                              </div>
+                      
+                                   
+                                 
+                                 <label for="dropdown" id="model" style="width: 90vw;">1. I have trouble wrapping up the final details of a project, once the challenging parts have been done. </label>
+                                   <select id="dropdown" >
+                                    <option value="" disabled selected>Select your option</option>
+                                     <option value = "Model_S"> Never </option>
+                                     <option value = "Model_3"> Rarely </option>
+                                     <option value = "Model_X"> Sometimes  </option>
+                                     <option value = "Model_Y"> Often </option>
+                                     <option value = "Cyber_Truck">Very Often </option>
+                                   </select>
+                                 <br>
+                                 <br>
+                                 <label for="dropdown" id="model" style="width: 90vw;"> 2. I have difficulty getting things in order when you have to do a task that requires organization.  </label>
+                                 <select id="dropdown" >
+                                  <option value="" disabled selected>Select your option</option>
+                                   <option value = "Model_S"> Never </option>
+                                   <option value = "Model_3"> Rarely </option>
+                                   <option value = "Model_X"> Sometimes  </option>
+                                   <option value = "Model_Y"> Often </option>
+                                   <option value = "Cyber_Truck">Very Often </option>
+                                 </select>
+                               <br>
+                               <br>
+                               <label for="dropdown" id="model" style="width: 90vw;"> 3. I have problems remembering appointments or obligations. </label>
+                               <select id="dropdown" >
+                                <option value="" disabled selected>Select your option</option>
+                                 <option value = "Model_S"> Never </option>
+                                 <option value = "Model_3"> Rarely </option>
+                                 <option value = "Model_X"> Sometimes  </option>
+                                 <option value = "Model_Y"> Often </option>
+                                 <option value = "Cyber_Truck">Very Often </option>
+                               </select>
+                             <br>
+                             <br>
+                             <label for="dropdown" id="model" style="width: 90vw;"> 4. When I have a task that requires a lot of thought, I avoid or delay getting started.</label>
+                             <select id="dropdown" >
+                              <option value="" disabled selected>Select your option</option>
+                               <option value = "Model_S"> Never </option>
+                               <option value = "Model_3"> Rarely </option>
+                               <option value = "Model_X"> Sometimes  </option>
+                               <option value = "Model_Y"> Often </option>
+                               <option value = "Cyber_Truck">Very Often </option>
+                             </select>
+                           <br>
+                           <br>
+                           <label for="dropdown" id="model" style="width: 90vw;"> 5. I fidget or squirm with my hands or feet when I have to sit down for a long time.  </label>
+                           <select id="dropdown" >
+                            <option value="" disabled selected>Select your option</option>
+                             <option value = "Model_S"> Never </option>
+                             <option value = "Model_3"> Rarely </option>
+                             <option value = "Model_X"> Sometimes  </option>
+                             <option value = "Model_Y"> Often </option>
+                             <option value = "Cyber_Truck">Very Often </option>
+                           </select>
+                         <br>
+                         <br>
+                         <label for="dropdown" id="model" style="width: 90vw;"> 6. I feel overly active and compelled to do things, like I’m being driven by a motor. </label>
+                         <select id="dropdown" >
+                          <option value="" disabled selected>Select your option</option>
+                           <option value = "Model_S"> Never </option>
+                           <option value = "Model_3"> Rarely </option>
+                           <option value = "Model_X"> Sometimes  </option>
+                           <option value = "Model_Y"> Often </option>
+                           <option value = "Cyber_Truck">Very Often </option>
+                         </select>
+                       <br>
+                       <br>
+                                  
+                                 
+                                   
+                                
+                                 
+                                   </div>
+                                   
+                                 </form>
+                                                         
+                                                      </div>
                            </div>
                            <div class="mm-survey-page" data-page="3">
                               <div class="mm-survery-content">
-                                 <div class="mm-survey-question">
-                                    <p>Which is the correct integer for Pi?</p>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio09" data-item="3" name="radio3" value="3" />
-                                    <label for="radio09"><span></span><p>3</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio10" data-item="3" name="radio3" value="4" />
-                                    <label for="radio10"><span></span><p>4</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio11" data-item="3" name="radio3" value="3.41" />
-                                    <label for="radio11"><span></span><p>3.41</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio12" data-item="3" name="radio3" value="3.14" />
-                                    <label for="radio12"><span></span><p>3.14</p></label>
-                                 </div>
-                              </div>
+                                 <h3 id="description">
+                                    Section 2 (Questions Part B)</h3>
+                                 
+                                 <form id="survey-form">
+                                 
+                                 <div class="input-headings">
+                                   
+                      
+                                   
+                                 
+                                 <label for="dropdown" id="model" style="width: 90vw;">7. I make careless mistakes when I have to work on a boring or difficult project.  </label>
+                                   <select id="dropdown" >
+                                    <option value="" disabled selected>Select your option</option>
+                                     <option value = "Model_S"> Never </option>
+                                     <option value = "Model_3"> Rarely </option>
+                                     <option value = "Model_X"> Sometimes  </option>
+                                     <option value = "Model_Y"> Often </option>
+                                     <option value = "Cyber_Truck">Very Often </option>
+                                   </select>
+                                 <br>
+                                 <br>
+                                 <label for="dropdown" id="model" style="width: 90vw;">8. I have difficulty keeping my attention when I’m doing boring or repetitive work. </label>
+                                 <select id="dropdown" >
+                                  <option value="" disabled selected>Select your option</option>
+                                   <option value = "Model_S"> Never </option>
+                                   <option value = "Model_3"> Rarely </option>
+                                   <option value = "Model_X"> Sometimes  </option>
+                                   <option value = "Model_Y"> Often </option>
+                                   <option value = "Cyber_Truck">Very Often </option>
+                                 </select>
+                               <br>
+                               <br>
+                               <label for="dropdown" id="model" style="width: 90vw;"> 9. I have difficulty concentrating on what people say to me, even when they are speaking to me </label>
+                               <select id="dropdown" >
+                                <option value="" disabled selected>Select your option</option>
+                                 <option value = "Model_S"> Never </option>
+                                 <option value = "Model_3"> Rarely </option>
+                                 <option value = "Model_X"> Sometimes  </option>
+                                 <option value = "Model_Y"> Often </option>
+                                 <option value = "Cyber_Truck">Very Often </option>
+                               </select>
+                             <br>
+                             <br>
+                             <label for="dropdown" id="model" style="width: 90vw;">10. I misplace or have difficulty finding things at home or at work. </label>
+                             <select id="dropdown" >
+                              <option value="" disabled selected>Select your option</option>
+                               <option value = "Model_S"> Never </option>
+                               <option value = "Model_3"> Rarely </option>
+                               <option value = "Model_X"> Sometimes  </option>
+                               <option value = "Model_Y"> Often </option>
+                               <option value = "Cyber_Truck">Very Often </option>
+                             </select>
+                           <br>
+                           <br>
+                           <label for="dropdown" id="model" style="width: 90vw;">11. I’m distracted by activity or noise around me.</label>
+                           <select id="dropdown" >
+                            <option value="" disabled selected>Select your option</option>
+                             <option value = "Model_S"> Never </option>
+                             <option value = "Model_3"> Rarely </option>
+                             <option value = "Model_X"> Sometimes  </option>
+                             <option value = "Model_Y"> Often </option>
+                             <option value = "Cyber_Truck">Very Often </option>
+                           </select>
+                         <br>
+                         <br>
+                         <label for="dropdown" id="model" style="width: 90vw;"> 12. I leave my seat in meetings or other situations where I’m expected to remain seated.  </label>
+                         <select id="dropdown" >
+                          <option value="" disabled selected>Select your option</option>
+                           <option value = "Model_S"> Never </option>
+                           <option value = "Model_3"> Rarely </option>
+                           <option value = "Model_X"> Sometimes  </option>
+                           <option value = "Model_Y"> Often </option>
+                           <option value = "Cyber_Truck">Very Often </option>
+                         </select>
+                       <br>
+                       <br>
+                                  
+                                 
+                                   
+                                
+                                 
+                                   </div>
+                                   
+                                 </form>
+                                                         
+                                                      </div>
                            </div>
                            <div class="mm-survey-page" data-page="4">
                               <div class="mm-survery-content">
-                                 <div class="mm-survey-question">
-                                    <p>The letter 'C' is the nth number in the alphabet, choose the correct number.</p>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio13" data-item="4" name="radio4" value="1" />
-                                    <label for="radio13"><span></span><p>1</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio14" data-item="4" name="radio4" value="2" />
-                                    <label for="radio14"><span></span><p>2</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio15" data-item="4" name="radio4" value="3" />
-                                    <label for="radio15"><span></span><p>3</p></label>
-                                 </div>
-                                 <div class="mm-survey-item">
-                                    <input type="radio" id="radio16" data-item="4" name="radio4" value="4" />
-                                    <label for="radio16"><span></span><p>4</p></label>
-                                 </div>
-                              </div>
+                                 <h3 id="description">
+                                    Section 2 (Questions Part C)</h3>
+                                 
+                                 <form id="survey-form">
+                                 
+                                 <div class="input-headings">
+                                   
+                      
+                                   
+                                 
+                                 <label for="dropdown" id="model" style="width: 90vw;">13. I feel restless or fidgety.  </label>
+                                   <select id="dropdown" >
+                                    <option value="" disabled selected>Select your option</option>
+                                     <option value = "Model_S"> Never </option>
+                                     <option value = "Model_3"> Rarely </option>
+                                     <option value = "Model_X"> Sometimes  </option>
+                                     <option value = "Model_Y"> Often </option>
+                                     <option value = "Cyber_Truck">Very Often </option>
+                                   </select>
+                                 <br>
+                                 <br>
+                                 <label for="dropdown" id="model" style="width: 90vw;">14. I have difficulty unwinding and relaxing when I have time to myself. </label>
+                                 <select id="dropdown" >
+                                  <option value="" disabled selected>Select your option</option>
+                                   <option value = "Model_S"> Never </option>
+                                   <option value = "Model_3"> Rarely </option>
+                                   <option value = "Model_X"> Sometimes  </option>
+                                   <option value = "Model_Y"> Often </option>
+                                   <option value = "Cyber_Truck">Very Often </option>
+                                 </select>
+                               <br>
+                               <br>
+                               <label for="dropdown" id="model" style="width: 90vw;">15. I find myself talking too much when I’m in social situations. </label>
+                               <select id="dropdown" >
+                                <option value="" disabled selected>Select your option</option>
+                                 <option value = "Model_S"> Never </option>
+                                 <option value = "Model_3"> Rarely </option>
+                                 <option value = "Model_X"> Sometimes  </option>
+                                 <option value = "Model_Y"> Often </option>
+                                 <option value = "Cyber_Truck">Very Often </option>
+                               </select>
+                             <br>
+                             <br>
+                             <label for="dropdown" id="model" style="width: 90vw;">16. When I’m in a conversation, I find myself finishing sentences of people I’m talking to, before they can finish them themselves. </label>
+                             <select id="dropdown" >
+                              <option value="" disabled selected>Select your option</option>
+                               <option value = "Model_S"> Never </option>
+                               <option value = "Model_3"> Rarely </option>
+                               <option value = "Model_X"> Sometimes  </option>
+                               <option value = "Model_Y"> Often </option>
+                               <option value = "Cyber_Truck">Very Often </option>
+                             </select>
+                           <br>
+                           <br>
+                           <label for="dropdown" id="model" style="width: 90vw;"> 17. I have difficulty waiting for my turn in situations when turn taking is required.  </label>
+                           <select id="dropdown" >
+                            <option value="" disabled selected>Select your option</option>
+                             <option value = "Model_S"> Never </option>
+                             <option value = "Model_3"> Rarely </option>
+                             <option value = "Model_X"> Sometimes  </option>
+                             <option value = "Model_Y"> Often </option>
+                             <option value = "Cyber_Truck">Very Often </option>
+                           </select>
+                         <br>
+                         <br>
+                         <label for="dropdown" id="model" style="width: 90vw;"> 18. I interrupt others when they are busy. </label>
+                         <select id="dropdown" >
+                          <option value="" disabled selected>Select your option</option>
+                           <option value = "Model_S"> Never </option>
+                           <option value = "Model_3"> Rarely </option>
+                           <option value = "Model_X"> Sometimes  </option>
+                           <option value = "Model_Y"> Often </option>
+                           <option value = "Cyber_Truck">Very Often </option>
+                         </select>
+                       <br>
+                       <br>
+                       <div class = "questions">
+
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
+                              <button id="assessScore" onclick="calculateAutismScore()" class="main-btn">Evaluate</button>
+                              <button id="reAssessScore" onclick="reEvaluateAutismScore()" style="display: none;" class="main-btn">Re-evaluate</button>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div id="scoringMethodology" style="display: none;clear:both;">
+                           <hr>
+                           <h3>Scores</h3>
+                           <div class="col-md-12">
+                        <label for="score">Your Score:</label><input type="text" id="score" name="score" disabled>
+                        <br>
+                        <p style="clear:both"> Interpretaion of the scores: </p>
+                           <img class="center" src = "scoring_2.png"></img>
+                        </div>
+                          
+                           <br>
+                        </div>
+                        </div>
+                                  
+                                 
+                                   
+                                
+                                 
+                                   </div>
+                                   
+                                 </form>
+                                                         
+                                                      </div>
                            </div>
                            <!-- <div class="mm-survey-page" data-page="5">
                               <div class="mm-survery-content">
