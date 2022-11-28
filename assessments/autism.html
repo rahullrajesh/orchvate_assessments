@@ -2,7 +2,7 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <!-- The above 3 meta tags * must*  come first in the head; any other head content must come * after*  these tags -->
    <title>Orchvate</title>
    <link rel="shortcut icon" href="../img/favicon.ico">
    <!-- Google font -->
@@ -27,6 +27,11 @@
       
       gtag('config', 'G-1DQG5TD1M5');
    </script>
+      <style>
+        .error{
+           color: red;
+        }
+     </style>
 </head>
 <body>
    <!-- Portfolio -->
@@ -98,7 +103,7 @@
           <p >This self-assessment for adults does not count as a diagnosis, it can help you to find out if you have any traits of ASD. This will also give you a better understanding of how your brain works and for which tasks you may need additional support.</p>
         <br>  <p>The assessment uses The Autism Spectrum Quotient ASQ Test, comprising a set of fifty questions. It was developed by Simon Baron-Cohen, a clinical psychologist from Cambridge’s Autism Research Centre. It is used to determine whether or not an adult exhibits symptoms of autism and is used for the assessment of individuals above 18 years of age.  </p>
          
-       <br>   <p>The questionnaire has 5 parts. Each part has 10 questions.</p>
+       <br>   <p>The questionnaire has 10 parts. Each part has 5 questions.</p>
                                  
                               </div>
                            </div>
@@ -113,21 +118,21 @@
                <h6 style="color:rgb(0, 0, 0) ;font-family: 'Varela Round', sans-serif;font-size: medium;line-height: 2.1;"><b> Your responses, scores and interpretation will be sent to your email ID</b>.</h6>
             
             
-            <form id="survey-form">
+            <form id="autism-survey-form-section2">
               
             
             <div class="input-headings">
               
               <label for="name" id="name-label"> Name</label>
-              <input id="name" type="text" name="name" placeholder="Enter your name here" class="form-inputs" required> </input>   
+              <input id="name" type="text" name="name" placeholder="Enter your name here" class="form-inputs"> </input>   
             <br>        
-              <label for="email" id="email-label"><i style="color: rgb(255, 0, 0); ;">*</i> Email </label>
+              <label for="email" id="email-label"><i style="color: rgb(255, 0, 0); ;">* </i> Email </label>
               <input id="email" type="email" name="email" placeholder="Enter here" class="form-inputs" required> </input>
             <br>
               
             
-            <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> Age </label>
-              <select id="dropdown" class="required" >
+            <label for="age" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i> Age </label>
+              <select name="age" id="age" class="required" >
                <option value="" disabled selected>Select your option</option>
                 <option value = "age_18"> 18-25 </option>
                             <option value = "age_26">  26-35  </option>
@@ -137,8 +142,8 @@
               </select>
             <br>
             <br>
-            <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> Gender </label>
-            <select id="dropdown">
+            <label for="gender" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i> Gender </label>
+            <select name="gender" id="gender">
                <option value="" disabled selected>Select your option</option>
               <option value = "Male "> Male </option>
               <option value = "Female"> Female </option>
@@ -148,8 +153,8 @@
             <br>
             <br>
                                        
-            <label for="features"><i style="color: rgb(255, 0, 0); ;">*</i> <b>Function/Domain</b></label>
-            <select id="dropdown">
+            <label for="domain"><i style="color: rgb(255, 0, 0); ;">* </i> <b>Function/Domain</b></label>
+            <select name="domain" id="domain">
                <option value="" disabled selected>Select your option</option>
                <option value = "Tech"> Tech</option>
                <option value = "Non-Tech"> Non-Tech</option>
@@ -174,15 +179,15 @@
                                        <h4> Part 1 of 5</h4>
                                        <h6>( Questions 1-5 )</h6>
                                     
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section3">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>1. I prefer to do things with others rather than on my own.  </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q1" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>1. I prefer to do things with others rather than on my own.  </label>
+                                      <select name="q1" id="q1" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -192,8 +197,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>2. I prefer to do things the same way over and over again.</label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q2" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>2. I prefer to do things the same way over and over again.</label>
+                                      <select id="q2" name="q2" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -203,8 +208,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>3. If I try to imagine something, I find it very easy to create a picture in my mind.</label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q3" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>3. If I try to imagine something, I find it very easy to create a picture in my mind.</label>
+                                    <select id="q3" name="q3" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -214,8 +219,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>4. I frequently get so strongly absorbed in one thing that I lose sight of other things. </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q4" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>4. I frequently get so strongly absorbed in one thing that I lose sight of other things. </label>
+                                  <select id="q4" name="q4" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -225,8 +230,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>5. I often notice small sounds when others do not.</label>
-                                <select id="dropdown" class="required" >
+                                <label for="q5" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>5. I often notice small sounds when others do not.</label>
+                                <select id="q5" name="q5" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -253,15 +258,15 @@
                                        Section 2  </h3>
                                        <h4>Part 1 of 5</h4>
                                        <h6>( Questions 6-10 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section4">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>6. I usually notice car number plates or similar strings of information.  </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q6" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>6. I usually notice car number plates or similar strings of information.  </label>
+                                      <select id="q6" name="q6" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -271,8 +276,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>7. Others frequently tell me that what I’ve said is impolite, even though I think it’s polite.  </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q7" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>7. Others frequently tell me that what I’ve said is impolite, even though I think it’s polite.  </label>
+                                      <select id="q7" name="q7" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -282,8 +287,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>8. When I’m reading a story, I can easily imagine what the characters might look like. </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q8" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>8. When I’m reading a story, I can easily imagine what the characters might look like. </label>
+                                    <select id="q8" name="q8" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -293,8 +298,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>9. I am fascinated by dates.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q9" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>9. I am fascinated by dates.  </label>
+                                  <select id="q9" name="q9" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -304,8 +309,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>10. In a social group, I can easily keep track of several different people’s conversations. </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q10" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>10. In a social group, I can easily keep track of several different people’s conversations. </label>
+                                <select id="q10" name="q10" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -332,15 +337,15 @@
                                        Section 2  </h3>
                                        <h4>Part 2 of 5</h4>
                                        <h6>( Questions 11-15 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section5">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>11. I find social situations easy.   </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q11" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>11. I find social situations easy.   </label>
+                                      <select id="q11" name="q11" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -350,8 +355,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>12. I tend to notice details that others do not. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q12" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>12. I tend to notice details that others do not. </label>
+                                      <select id="q12" name="q12" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -361,8 +366,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>13. I would rather go to a library than to a party.  </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q13" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>13. I would rather go to a library than to a party.  </label>
+                                    <select id="q13" name="q13" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -372,8 +377,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>14. I find making up stories easy. </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q14" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>14. I find making up stories easy. </label>
+                                  <select id="q14" name="q14" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -383,8 +388,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>15. I find myself drawn more strongly to people than to things.  </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q15" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>15. I find myself drawn more strongly to people than to things.  </label>
+                                <select id="q15" name="q15" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -412,15 +417,15 @@
                                        <h4>Part 2 of 5 </h4>
                                        <h6>( Questions 16-20 )</h6>
                                     
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section6">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>16. I tend to have very strong interests, which I get upset about if I can’t pursue. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q16" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>16. I tend to have very strong interests, which I get upset about if I can’t pursue. </label>
+                                      <select id="q16" name="q16" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -430,8 +435,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>17. I enjoy social chitchat. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q17" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>17. I enjoy social chitchat. </label>
+                                      <select id="q17" name="q17" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -441,8 +446,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>18. When I talk, it isn’t always easy for others to get a word in edgewise. </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q18" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>18. When I talk, it isn’t always easy for others to get a word in edgewise. </label>
+                                    <select id="q18" name="q18" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -452,8 +457,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>19. I am fascinated by numbers.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q19" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>19. I am fascinated by numbers.  </label>
+                                  <select id="q19" name="q19" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -463,8 +468,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>20. When I’m reading a story, I find it difficult to work out the characters’ intentions.  </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q20" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>20. When I’m reading a story, I find it difficult to work out the characters’ intentions.  </label>
+                                <select id="q20" name="q20" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -491,15 +496,15 @@
                                        Section 2 </h3>
                                        <h4>Part 3 of 5 </h4>
                                        <h6>( Questions 21-25 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section7">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>21. I don’t particularly enjoy reading fiction. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q21" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>21. I don’t particularly enjoy reading fiction. </label>
+                                      <select id="q21" name="q21" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -509,8 +514,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>22. I find it hard to make new friends. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q22" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>22. I find it hard to make new friends. </label>
+                                      <select id="q22" name="q22" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -520,8 +525,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>23. I notice patterns in things all the time.  </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q23" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>23. I notice patterns in things all the time.  </label>
+                                    <select id="q23" name="q23" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -531,8 +536,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>24. I would rather go to the theatre than to a museum.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q24" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>24. I would rather go to the theatre than to a museum.  </label>
+                                  <select id="q24" name="q24" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -542,8 +547,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>25. It does not upset me if my daily routine is disturbed.</label>
-                                <select id="dropdown" class="required" >
+                                <label for="q25" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>25. It does not upset me if my daily routine is disturbed.</label>
+                                <select id="q25" name="q25" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -570,15 +575,15 @@
                                        Section 2 </h3>
                                        <h4>Part 3 of 5 </h4>
                                        <h6>( Questions 26-30 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section8">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>26. I frequently find that I don’t know how to keep a conversation going.  </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q26" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>26. I frequently find that I don’t know how to keep a conversation going.  </label>
+                                      <select id="q26" name="q26" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -588,8 +593,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>27. I find it easy to “read between the lines” when someone is talking to me.  </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q27" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>27. I find it easy to “read between the lines” when someone is talking to me.  </label>
+                                      <select id="q27" name="q27" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -599,8 +604,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>28. I usually concentrate more on the whole picture, rather than on the small details.  </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q28" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>28. I usually concentrate more on the whole picture, rather than on the small details.  </label>
+                                    <select id="q28" name="q28" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -610,8 +615,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>29. I am not very good at remembering phone numbers. </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q29" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>29. I am not very good at remembering phone numbers. </label>
+                                  <select id="q29" name="q29" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -621,8 +626,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>30. I don’t usually notice small changes in a situation or a person’s appearance. </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q30" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>30. I don’t usually notice small changes in a situation or a person’s appearance. </label>
+                                <select id="q30" name="q30" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -649,15 +654,15 @@
                                        Section 2  </h3>
                                        <h4>Part 4 of 5</h4>
                                        <h6>( Questions 31-35 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section9">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>31. I know how to tell if someone listening to me is getting bored. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q31" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>31. I know how to tell if someone listening to me is getting bored. </label>
+                                      <select id="q31" name="q31" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -667,8 +672,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>32. I find it easy to do more than one thing at once. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q32" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>32. I find it easy to do more than one thing at once. </label>
+                                      <select id="q32" name="q32" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -678,8 +683,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>33. When I talk on the phone, I’m not sure when it’s my turn to speak. </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q33" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>33. When I talk on the phone, I’m not sure when it’s my turn to speak. </label>
+                                    <select id="q33" name="q33" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -689,8 +694,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>34. I enjoy doing things spontaneously.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q34" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>34. I enjoy doing things spontaneously.  </label>
+                                  <select id="q34" name="q34" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -700,8 +705,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>35. I am often the last to understand the point of a joke. </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q35" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>35. I am often the last to understand the point of a joke. </label>
+                                <select id="q35" name="q35" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -728,16 +733,16 @@
                                        Section 2  </h3>
                                        <h4>Part 4 of 5</h4>
                                        <h6>( Questions 36-40 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section10">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>36. I find it easy to work out what someone’s thinking/feeling just by looking at their face. 	
+                                    <label for="q36" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>36. I find it easy to work out what someone’s thinking/feeling just by looking at their face. 	
                                     </label>
-                                      <select id="dropdown" class="required" >
+                                      <select id="q36" name="q36" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -747,8 +752,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>37. If there is an interruption, I can switch back to what I was doing very quickly. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q37" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>37. If there is an interruption, I can switch back to what I was doing very quickly. </label>
+                                      <select id="q37" name="q37" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -758,8 +763,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>38. I am good at social chitchat. </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q38" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>38. I am good at social chitchat. </label>
+                                    <select id="q38" name="q38" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -769,8 +774,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>39. People often tell me that I keep going on and on about the same thing.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q39" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>39. People often tell me that I keep going on and on about the same thing.  </label>
+                                  <select id="q39" name="q39" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -780,8 +785,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>40. When I was young, I used to enjoy playing games involving pretending with other children. </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q40" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>40. When I was young, I used to enjoy playing games involving pretending with other children. </label>
+                                <select id="q40" name="q40" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -808,15 +813,15 @@
                                        Section 2  </h3>
                                        <h4>Part 5 of 5</h4>
                                        <h6>( Questions 41-45 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section11">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>41. I like to collect information about categories of things (e.g., cars, birds, trains, plants).   </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q41" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>41. I like to collect information about categories of things (e.g., cars, birds, trains, plants).   </label>
+                                      <select id="q41" name="q41" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -826,8 +831,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>42. I find it difficult to imagine what it would be like to be someone else. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q42" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>42. I find it difficult to imagine what it would be like to be someone else. </label>
+                                      <select id="q42" name="q42" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -836,8 +841,9 @@
                                         
                                       </select>
                                     <br>
-                                    <br><i style="color: rgb(255, 0, 0); ;">*</i>43. I like to carefully plan any activities I participate in.  </label>
-                                    <select id="dropdown" class="required" >
+                                    <br>
+                                    <label for="q43" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>43. I like to carefully plan any activities I participate in.  </label>
+                                    <select id="q43" name="q43" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -847,8 +853,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>44. I enjoy social occasions. </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q44" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>44. I enjoy social occasions. </label>
+                                  <select id="q44" name="q44" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -858,8 +864,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>45. I find it difficult to work out people’s intentions.  </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q45" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>45. I find it difficult to work out people’s intentions.  </label>
+                                <select id="q45" name="q45" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -886,15 +892,15 @@
                                        Section 2  </h3>
                                        <h4>Part 5 of 5</h4>
                                        <h6>( Questions 46-50 )</h6>
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section12">
                                     
                                     <div class="input-headings">
                                       
                          
                                       
                                     
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>46. New situations make me anxious. </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q46" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>46. New situations make me anxious. </label>
+                                      <select id="q46" name="q46" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -904,8 +910,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>47. I enjoy meeting new people.   </label>
-                                      <select id="dropdown" class="required" >
+                                    <label for="q47" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>47. I enjoy meeting new people.   </label>
+                                      <select id="q47" name="q47" class="required" >
                                        <option value="" disabled selected>Select your option</option>
                                         <option value = "Definitely Agree"> Definitely Agree </option>
                                         <option value = "Slightly Agree"> Slightly Agree </option>
@@ -915,8 +921,8 @@
                                       </select>
                                     <br>
                                     <br>
-                                    <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>48. I am a good diplomat.  </label>
-                                    <select id="dropdown" class="required" >
+                                    <label for="q48" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>48. I am a good diplomat.  </label>
+                                    <select id="q48" name="q48" class="required" >
                                      <option value="" disabled selected>Select your option</option>
                                       <option value = "Definitely Agree"> Definitely Agree </option>
                                       <option value = "Slightly Agree"> Slightly Agree </option>
@@ -926,8 +932,8 @@
                                     </select>
                                   <br>
                                   <br>
-                                  <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>49. I am not very good at remembering people’s date of birth.  </label>
-                                  <select id="dropdown" class="required" >
+                                  <label for="q49" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>49. I am not very good at remembering people’s date of birth.  </label>
+                                  <select id="q49" name="q49" class="required" >
                                    <option value="" disabled selected>Select your option</option>
                                     <option value = "Definitely Agree"> Definitely Agree </option>
                                     <option value = "Slightly Agree"> Slightly Agree </option>
@@ -937,8 +943,8 @@
                                   </select>
                                 <br>
                                 <br>
-                                <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>50. I find it very easy to play games with children that involve pretending.  </label>
-                                <select id="dropdown" class="required" >
+                                <label for="q50" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">* </i>50. I find it very easy to play games with children that involve pretending.  </label>
+                                <select id="q50" name="q50" class="required" >
                                  <option value="" disabled selected>Select your option</option>
                                   <option value = "Definitely Agree"> Definitely Agree </option>
                                   <option value = "Slightly Agree"> Slightly Agree </option>
@@ -971,10 +977,10 @@
                                     </p>
                                  </br>
                               </br>
-                                    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions</input>
+                                    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree to the Terms & Conditions</input>
 <br><br>
                                     
-                                    <form id="survey-form">
+                                    <form id="autism-survey-form-section13">
                                     
                                     <div class="input-headings">
                                       
@@ -1076,8 +1082,10 @@
    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" ></script>
    <script type="text/javascript" src="../js/main.js"></script>
    <script type="text/javascript" src="../js/autismQuestionnaire.js"></script>
+   
    <script>
       $(document).ready(function(){
       setAutismQuestionnaire();
