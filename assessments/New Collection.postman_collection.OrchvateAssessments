@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "b14d0d8b-abbd-47a7-9043-1c6c66d64641",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Autism Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FormType\": 1,\r\n    \"Responses\": [\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"DA\",\r\n        \"SA\",\r\n        \"SD\",\r\n        \"DD\",\r\n        \"SD\",\r\n        \"DD\"\r\n    ],\r\n    \"UserDetails\": {\r\n        \"AgeGroup\": 1,\r\n        \"Domain\": 1,\r\n        \"Email\": \"toriddhi.datta@gmail.com\",\r\n        \"Gender\": 2,\r\n        \"Name\": \"Riddhi\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://orchvatefunctionappsassessmentvalidation.azurewebsites.net/api/AssessmentValidationAndScoringFunction?code=Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A==",
+					"protocol": "https",
+					"host": [
+						"orchvatefunctionappsassessmentvalidation",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"AssessmentValidationAndScoringFunction"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ADHD Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FormType\": 0,\r\n    \"Responses\": [\r\n        \"VO\",\r\n        \"O\",\r\n        \"VO\",\r\n        \"VO\",\r\n        \"R\",\r\n        \"VO\",\r\n        \"N\",\r\n        \"VO\",\r\n        \"VO\",\r\n        \"VO\",\r\n        \"R\",\r\n        \"VO\",\r\n        \"S\",\r\n        \"VO\",\r\n        \"O\",\r\n        \"VO\",\r\n        \"VO\",\r\n        \"VO\"\r\n    ],\r\n    \"UserDetails\": {\r\n        \"AgeGroup\": 1,\r\n        \"Domain\": 1,\r\n        \"Email\": \"toriddhi.datta@gmail.com\",\r\n        \"Gender\": 0,\r\n        \"Name\": \"Riddhi\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://orchvatefunctionappsassessmentvalidation.azurewebsites.net/api/AssessmentValidationAndScoringFunction?code=Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A==",
+					"protocol": "https",
+					"host": [
+						"orchvatefunctionappsassessmentvalidation",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"AssessmentValidationAndScoringFunction"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A=="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

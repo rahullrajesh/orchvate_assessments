@@ -1,0 +1,89 @@
+Autism sheet details:
+ Please refer to the enums provided for user details:
+ POST https://orchvatefunctionappsassessmentvalidation.azurewebsites.net/api/AssessmentValidationAndScoringFunction?code=Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A==
+ 
+	User:
+		Name
+				<optionalfield>
+			
+		Email
+				<mandatory,must be an email>
+		
+		AgeGroup:
+				EIGHTEEN_TO_TWENTYFIVE = 0,
+				TWENTYSIX_TO_THIRTYFIVE = 1,
+				THIRTYSIX_TO_FORTYFIVE = 2,
+				FORTYSIX_TO_FIFTYFIVE = 3,
+				ABOVE_55 = 4
+	
+		Gender
+				MALE = 0,
+				FEMALE = 1,
+				OTHERS = 2
+	
+		Domain
+				TECH = 0,
+				NON_TECH = 1
+			
+	Responses (List of 50 strings):
+			"S" : Sometimes,
+			"O" : Often
+			"VO" : Very Often
+			"N" : Never
+			"R" : Rarely
+			
+	FormType
+			0 for ADHD
+			
+
+	The form must have 50 strings under Responses as there are 50 questions. Passing anything other than that should result in a 400 Bad request
+	
+	
+	
+	Working Body:
+	
+	{
+    "FormType": 1,
+    "Responses": [
+        {
+    "FormType": 0,
+    "Responses": [
+        "VO",
+        "O",
+        "VO",
+        "VO",
+        "R",
+        "VO",
+        "N",
+        "VO",
+        "VO",
+        "VO",
+        "R",
+        "VO",
+        "S",
+        "VO",
+        "O",
+        "VO",
+        "VO",
+        "VO"
+    ],
+    "UserDetails": {
+        "AgeGroup": 1,
+        "Domain": 1,
+        "Email": "toriddhi.datta@gmail.com",
+        "Gender": 0,
+        "Name": "Riddhi"
+    }
+}
+    ],
+    "UserDetails": {
+        "AgeGroup": 1,
+        "Domain": 1,
+        "Email": "toriddhi.datta@gmail.com",
+        "Gender": 2,
+        "Name": "Riddhi"
+    }
+}
+	
+	
+	
