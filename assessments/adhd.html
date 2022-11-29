@@ -118,8 +118,7 @@
                                     predictive of symptoms consistent with ADHD form Part A. Part B contains the
                                     remaining twelve questions, that describe common ADHD symptoms.</p>
                               </div>
-                              <button id="assessScore-test" 
-                                                class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
+                              
                            </div>
 
                            <div id="page2" class="mm-survey-page " data-page="2">
@@ -527,8 +526,10 @@
                                  <p>If you have any concerns or questions please contact us at info@orchvate.com</p>
                                  </br>
                                  </br>
-                                 <input type="checkbox" name="terms" class="required" id="terms" onchange="activateButton(this)" required> I Agree to
+                                 <input type="checkbox" name="terms" class="required" id="terms" required> I Agree to
                                  Terms & Conditions</input>
+
+                                 <p class="error" style="display: none;" id="terms-error">Please accept the Terms & Conditions</p>
 
                                  <form id="adhd-survey-form-section6">
 
@@ -538,7 +539,7 @@
                                           <div class="col-md-4"></div>
                                           <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
                                              <button id="assessScore" onclick="saveAndCalculateScore(0)"
-                                                class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
+                                                class="main-btn">Evaluate</button>
                                              
                                           </div>
                                           
@@ -572,6 +573,9 @@
                           
                            <div class="mm-next-btn">
                               <button id="next-btn">Next</button>
+                           </div>
+                           <div class="mm-prev-btn">
+                              <button id="prev-btn">Prev</button>
                            </div>
                            <div class="mm-finish-btn">
                               <button  type="submit">Submit</button>
@@ -696,15 +700,15 @@
                <span id="part-a-description"></span>
             </span>
                <span class="score-container">
-                  <span id="part-a-score" class="score">20</span>
+                  <span id="part-a-score" class="score"></span>
                </span>
             </div>
-            <div class="score-div"><span>Your score <b>Part-B</b>
+            <div class="score-div"><span>Your score for <b>Part-B</b>
                <br/>
                <span id="part-b-description"> </span>
             </span>
                <span class="score-container">
-                  <span id="part-b-score" class="score">20</span></p>
+                  <span id="part-b-score" class="score"></span></p>
                </span>
             </div>
             

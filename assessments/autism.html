@@ -105,8 +105,6 @@
         <br>  <p>The assessment uses The Autism Spectrum Quotient ASQ Test, comprising a set of fifty questions. It was developed by Simon Baron-Cohen, a clinical psychologist from Cambridge’s Autism Research Centre. It is used to determine whether or not an adult exhibits symptoms of autism and is used for the assessment of individuals above 18 years of age.  </p>
          
        <br>   <p>The questionnaire has 5 parts. Each part has 10 questions.</p>
-       <button id="assessScore-test" 
-       class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
                               </div>
                            </div>
             
@@ -983,7 +981,9 @@
                                  </br>
                               </br>
                                     <input type="checkbox" name="terms" class="required" id="terms" onchange="activateButton(this)">  I Agree to the Terms & Conditions</input>
-<br><br>
+                                    <p class="error" style="display: none;" id="terms-error">Please accept the Terms & Conditions</p>
+
+                                    <br><br>
                                     
                                     <form id="autism-survey-form-section13">
                                     
@@ -994,7 +994,7 @@
                               
                                           <div class="col-md-4"></div>
                                           <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-                                                <button id="assessScore" onclick="saveAndCalculateScore(1)" class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
+                                                <button id="assessScore" onclick="saveAndCalculateScore(1)" class="main-btn" type="button">Evaluate</button>
                                                 
                                                 
                                           </div>
@@ -1034,6 +1034,9 @@
                               <div class="mm-next-btn">
                                  <button >Next</button>
                               </div>
+                              <div class="mm-prev-btn">
+                                <button id="prev-btn">Prev</button>
+                             </div>
                               <div class="mm-finish-btn">
                                  <button>Submit</button>
                               </div>
@@ -1091,13 +1094,13 @@
         <h4 class="modal-title">ASD Scoring</h4>
       </div>
       <div class="modal-body">
-        <div class="score-div"><span>Your total score for the assessment is 
+        <div class="score-div"><span>Your total score for the assessment is:
            <br/>
            <span id="part-description"></span>
 
         </span>
            <span class="score-container">
-                  <span id="part-a-score" class="score">20</span>
+                  <span id="assessment-score" class="score"></span>
                </span>
         </div>
         
