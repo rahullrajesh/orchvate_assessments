@@ -118,6 +118,8 @@
                                     predictive of symptoms consistent with ADHD form Part A. Part B contains the
                                     remaining twelve questions, that describe common ADHD symptoms.</p>
                               </div>
+                              <button id="assessScore-test" 
+                                                class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
                            </div>
 
                            <div id="page2" class="mm-survey-page " data-page="2">
@@ -202,7 +204,7 @@
                                  <h4>Part A</h4>
                                  <h6>( Questions 1-6 )</h6>
 
-                                 <form id="adhd-survey-form-section2a">
+                                 <form id="adhd-survey-form-section3">
 
                                     <div class="input-headings">
 
@@ -306,7 +308,7 @@
                                  <h4>Part B </h4>
                                  <h6>( Questions 7-12 )</h6>
 
-                                 <form id="adhd-survey-form-section2b">
+                                 <form id="adhd-survey-form-section4">
 
                                     <div class="input-headings">
 
@@ -409,7 +411,7 @@
                                  <h4>Part B</h4>
                                  <h6>( Questions 13-18 )</h6>
 
-                                 <form id="adhd-survey-form-section2b2">
+                                 <form id="adhd-survey-form-section5">
 
                                     <div class="input-headings">
 
@@ -535,7 +537,7 @@
 
                                           <div class="col-md-4"></div>
                                           <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-                                             <button id="assessScore" onclick="calculateAutismScore()"
+                                             <button id="assessScore" onclick="saveAndCalculateScore(0)"
                                                 class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
                                              
                                           </div>
@@ -689,29 +691,47 @@
             <h4 class="modal-title">ADHD Scoring</h4>
           </div>
           <div class="modal-body">
-            <p>Your score <b>Part-A</b> is :</p>
-            <br>
-            <p>Your score <b>Part-B</b> is :</p>
-            <br>
-            <p><b>Interpretation</b></p>
-            <br>
-                  <p><b>Part A assesses ADHD traits.</b></p>
-   
-            <ul><li>4 to 6 - Strong ADHD traits </li>
-            <li>3 - Moderate ADHD traits </li>
-          <li>1 to 2 - Mild ADHD traits </li>
-        <li>0 – No ADHD traits</li>
-      </ul>
+            <div class="score-div"><span>Your score for <b>Part-A</b>
+               <br/>
+               <span id="part-a-description"></span>
+            </span>
+               <span class="score-container">
+                  <span id="part-a-score" class="score">20</span>
+               </span>
+            </div>
+            <div class="score-div"><span>Your score <b>Part-B</b>
+               <br/>
+               <span id="part-b-description"> </span>
+            </span>
+               <span class="score-container">
+                  <span id="part-b-score" class="score">20</span></p>
+               </span>
+            </div>
+            
+            <div class="interpretation-div">
+               <p><b>Interpretation</b></p>
+               <b>Part A assesses ADHD traits.</b>
+               <ul class="interpretations-ul">
+                  <li>4 to 6 - Strong ADHD traits </li>
+                  <li>3 - Moderate ADHD traits </li>
+                  <li>1 to 2 - Mild ADHD traits </li>
+                  <li>0 – No ADHD traits</li>
+               </ul>
+            </div>
       <br>
-      <p><b>Part B is not diagnostic. It describes common ADHD symptoms</b></p>
+
+      <div class="interpretation-div">
+         <p><b>Part B is not diagnostic. It describes common ADHD symptoms</b></p>
    
-            <ul><li>9 – 12 – You exhibit many ADHD symptoms</li>
+            <ul class="interpretations-ul"><li>9 – 12 – You exhibit many ADHD symptoms</li>
             <li>5 – 8 – You exhibit some ADHD symptoms </li>
           <li>1 – 4 – You exhibit few ADHD symptoms</li>
         <li>0 – You do not exhibit any ADHD symptoms</li>
       </ul>
+      </div>
+      
       <br>
-      <p><b>A detailed interpretation of your score and responses to the questions will be send to the your email</b> </p>
+      <p><b>A detailed interpretation of your score and responses to the questions will be sent to your email</b> </p>
     
           </div>
           <div class="modal-footer">

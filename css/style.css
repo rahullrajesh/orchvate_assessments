@@ -1961,7 +1961,7 @@ header {
 
 .mm-next-btn {
 	display: inline-block;
-	opacity: 0.25;
+	/* opacity: 0.25; */
     position: relative;
     float: right;
     padding: 8px 24px;
@@ -2193,4 +2193,53 @@ input[type="radio"]:checked + label span {
     position:absolute;
     margin: 3px;
     visibility: hidden;
+}
+
+.score-container {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.score-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-div {
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.interpretations-ul {
+    list-style-type: disc;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-inline-start: 40px;
+}
+.interpretations-ul li {
+    font-size: 1.2rem;
+}
+.interpretation-div:nth-of-type(1) {
+    margin-top: 5rem;
+    
+}
+
+.interpretation-div p {
+    margin-bottom: 0rem;
+    
 }

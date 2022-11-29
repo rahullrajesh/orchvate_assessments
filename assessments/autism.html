@@ -104,8 +104,9 @@
           <p >This self-assessment for adults does not count as a diagnosis, it can help you to find out if you have any traits of ASD. This will also give you a better understanding of how your brain works and for which tasks you may need additional support.</p>
         <br>  <p>The assessment uses The Autism Spectrum Quotient ASQ Test, comprising a set of fifty questions. It was developed by Simon Baron-Cohen, a clinical psychologist from Cambridge’s Autism Research Centre. It is used to determine whether or not an adult exhibits symptoms of autism and is used for the assessment of individuals above 18 years of age.  </p>
          
-       <br>   <p>The questionnaire has 10 parts. Each part has 5 questions.</p>
-                                 
+       <br>   <p>The questionnaire has 5 parts. Each part has 10 questions.</p>
+       <button id="assessScore-test" 
+       class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
                               </div>
                            </div>
             
@@ -993,7 +994,7 @@
                               
                                           <div class="col-md-4"></div>
                                           <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-                                                <button id="assessScore" onclick="calculateAutismScore()" class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
+                                                <button id="assessScore" onclick="saveAndCalculateScore(1)" class="main-btn" data-toggle="modal" data-target="#myModal">Evaluate</button>
                                                 
                                                 
                                           </div>
@@ -1084,30 +1085,44 @@
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
-    <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">ASD Scoring</h4>
       </div>
       <div class="modal-body">
-        <p>Your score is :</p>
-        <br>
-        <p><b>Interpretation</b></p>
-        <br>
-        <ul><li>0 to 11 - no tendency at all towards autistic traits</li>
-        <li>12 to 21 - average result that people get (women average around 15 and men around 17)</li>
-      <li>22 to 25 - autistic tendencies slightly above the population average</li>
-    <li>26 to 31 - borderline indication of autism, or mild autism</li>
-  <li>32 to 50 - strong likelihood of autism</li></ul>
+        <div class="score-div"><span>Your total score for the assessment is 
+           <br/>
+           <span id="part-description"></span>
+
+        </span>
+           <span class="score-container">
+                  <span id="part-a-score" class="score">20</span>
+               </span>
+        </div>
+        
+        <div class="interpretation-div">
+           <p><b>Interpretation</b></p>
+           <ul class="interpretations-ul">
+            <li>0 to 11 - no tendency at all towards autistic traits</li>
+            <li>12 to 21 - average result that people get (women average around 15 and men around 17)</li>
+          <li>22 to 25 - autistic tendencies slightly above the population average</li>
+        <li>26 to 31 - borderline indication of autism, or mild autism</li>
+      <li>32 to 50 - strong likelihood of autism</li>
+           </ul>
+        </div>
+  
   <br>
-  <p><b>A detailed interpretation of your score and responses to the questions will be send to the your email</b> </p>
+  <p><b>A detailed interpretation of your score and responses to the questions will be sent to your email</b> </p>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+
+    <!-- Modal content-->
+    
 
   </div>
 </div>
