@@ -22,12 +22,18 @@
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DQG5TD1M5"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
-      
+
       gtag('config', 'G-1DQG5TD1M5');
    </script>
+   <style>
+      .error{
+         color: red;
+      }
+   </style>
 </head>
+
 <body>
    <!-- Portfolio -->
    <div id="doctine" class="section bg-grey">
@@ -36,10 +42,10 @@
          <div class="container">
             <div class="navbar-header">
                <!-- Logo -->
-            
+
                <div class="navbar-brand">
-                  &nbsp;  <a href="http://www.orchvate.com">
-                  <img class="logo" src="logo format 1.webp" alt="logo">
+                  &nbsp; <a href="http://www.orchvate.com">
+                     <img class="logo" src="logo format 1.webp" alt="logo">
                   </a>
                </div>
                <!-- /Logo -->
@@ -63,21 +69,21 @@
          <div class="row">
             <!-- Section header -->
             <div class="section-header text-center">
-            </br>
-         </br>
-      </br>
+               </br>
+               </br>
+               </br>
                <h2 class="title">ADHD Self Assessment</h2>
             </div>
             <!-- /Section header -->
-<hr>
+            <hr>
             <div class="container">
                <div class="col-sm-12">
                   <div class="mm-survey">
-         
+
                      <div class="mm-survey-progress">
                         <div class="mm-survey-progress-bar mm-progress"></div>
                      </div>
-         
+
                      <div class="mm-survey-results">
                         <div class="mm-survey-results-container">
                            <h3 class="mm-survey-results-score"></h3>
@@ -89,438 +95,495 @@
                            </div>
                         </div>
                      </div>
-         
+
                      <div class="mm-survey-bottom">
                         <div class="mm-survey-container">
-                           <div class="mm-survey-page active" data-page="1">
+                           <div id="page1" class="mm-survey-page active" data-page="1">
                               <div class="mm-survery-content">
-         <h3 id="description">
-            Instructions</h3>
+                                 <br>
+                                 <h3 id="description">
+                                    Instructions</h3>
 
-            <p>This self-assessment does not count as a diagnosis; it can help you to find out if you have any traits of ADHD. This will also give you a better understanding of how your brain works and for which tasks you may need additional support.</p>  
-         </br>  
-            <p>The assessment is adapted from the Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist that was developed in conjunction with the World Health Organization (WHO), and the Workgroup on Adult ADHD. </p>
-         </br>    <p>The questions are consistent with DSM-IV criteria and address the manifestations of ADHD symptoms in adults. Six of the questions that were found to be the most predictive of symptoms consistent with ADHD form Part A. Part B contains the remaining twelve questions, that describe common ADHD symptoms.</p>           
-</div>
-                           </div>
-         
-                           <div class="mm-survey-page " data-page="2">
-                              <div class="mm-survery-content">
-         <h3 id="description">
-            Section 1</h3>
-            <h4>Personal Information</h4>
-
-            <p>Personal information will be protected by us and used in a consolidated form for research, analytical and statistical purposes only.
-           </p>
-           <h6 style="color:rgb(0, 0, 0) ;font-family: 'Varela Round', sans-serif;font-size:medium;"><b> Your responses, scores and interpretation will be sent to your email ID</b>.</h6>
-         
-         <form id="survey-form">
-         
-         <div class="input-headings">
-           
-           <label for="name" id="name-label"><i style="color: rgb(255, 0, 0); ;">*</i> Name </label>
-           <input id="name" type="text" name="name" placeholder="Enter your name here" class="form-inputs" required> </input>   
-         <br>        
-           <label for="email" id="email-label"><i style="color: rgb(255, 0, 0); ;">*</i> Email </label>
-           <input id="email" type="email" name="email" placeholder="Enter here" class="form-inputs" required> </input>
-         <br>
-           
-         
-         <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> Age </label>
-           <select id="dropdown" class="required" >
-            <option value="" disabled selected>Select your option</option>
-            <option value = "age_18"> 18-25 </option>
-            <option value = "age_26">  26-35  </option>
-            <option value = "age_36">  36-45  </option>
-            <option value = "age_46">  46-55  </option>
-            <option value = "age_56">  Above 55</option>
-           </select>
-         <br>
-         <br>
-         <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> Gender </label>
-         <select id="dropdown">
-            <option value="" disabled selected>Select your option</option>
-           <option value = "Model_S"> Male </option>
-           <option value = "Model_3"> Female </option>
-           <option value = "Cyber_Truck">Others</option>
-         </select>
-        
-         <br>
-         <br>
-                                    
-         <label for="features"><i style="color: rgb(255, 0, 0); ;">*</i> <b>Function/Domain</b></label>
-         <select id="dropdown">
-            <option value="" disabled selected>Select your option</option>
-            <option value = "Model_S"> Tech</option>
-            <option value = "Model_3"> Non-Tech</option>
-            
-          </select>
-          
-         
-           
-        
-         
-           </div>
-           
-         </form>
-                                 
+                                 <p>This self-assessment does not count as a diagnosis; it can help you to find out if
+                                    you have any traits of ADHD. This will also give you a better understanding of how
+                                    your brain works and for which tasks you may need additional support.</p>
+                                 </br>
+                                 <p>The assessment is adapted from the Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom
+                                    Checklist that was developed in conjunction with the World Health Organization
+                                    (WHO), and the Workgroup on Adult ADHD. </p>
+                                 </br>
+                                 <p>The questions are consistent with DSM-IV criteria and address the manifestations of
+                                    ADHD symptoms in adults. Six of the questions that were found to be the most
+                                    predictive of symptoms consistent with ADHD form Part A. Part B contains the
+                                    remaining twelve questions, that describe common ADHD symptoms.</p>
                               </div>
                            </div>
-                           <div class="mm-survey-page" data-page="3">
+
+                           <div id="page2" class="mm-survey-page " data-page="2">
+                              <br>
                               <div class="mm-survery-content">
                                  <h3 id="description">
-                                    Section 2  </h3>
-                                    <h4>Part A</h4>
-                                    <h6>( Questions 1-6 )</h6>
-                                 
-                                 <form id="survey-form">
-                                 
-                                 <div class="input-headings">
-                                   
-                      
-                                   
-                                 
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 1. I have trouble wrapping up the final details of a project, once the challenging parts have been done. </label>
-                                   <select id="dropdown" class="required" >
-                                    <option value="" disabled selected>Select your option</option>
-                                     <option value = "Never"> Never </option>
-                                     <option value = "Rarely"> Rarely </option>
-                                     <option value = "Sometimes "> Sometimes  </option>
-                                     <option value = "Often"> Often </option>
-                                     <option value = "Very Often">Very Often </option>
-                                   </select>
-                                 <br>
-                                 <br>
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 2. I have difficulty getting things in order when I have to do a task that requires organization.  </label>
-                                 <select id="dropdown" class="required" >
-                                  <option value="" disabled selected>Select your option</option>
-                                   <option value = "Never"> Never </option>
-                                   <option value = "Rarely"> Rarely </option>
-                                   <option value = "Sometimes "> Sometimes  </option>
-                                   <option value = "Often"> Often </option>
-                                   <option value = "Very Often">Very Often </option>
-                                 </select>
-                               <br>
-                               <br>
-                               <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 3. I have problems remembering appointments or obligations. </label>
-                               <select id="dropdown" class="required" >
-                                <option value="" disabled selected>Select your option</option>
-                                 <option value = "Never"> Never </option>
-                                 <option value = "Rarely"> Rarely </option>
-                                 <option value = "Sometimes "> Sometimes  </option>
-                                 <option value = "Often"> Often </option>
-                                 <option value = "Very Often">Very Often </option>
-                               </select>
-                             <br>
-                             <br>
-                             <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 4. When I have a task that requires a lot of thought, I avoid or delay getting started.</label>
-                             <select id="dropdown" class="required" >
-                              <option value="" disabled selected>Select your option</option>
-                               <option value = "Never"> Never </option>
-                               <option value = "Rarely"> Rarely </option>
-                               <option value = "Sometimes "> Sometimes  </option>
-                               <option value = "Often"> Often </option>
-                               <option value = "Very Often">Very Often </option>
-                             </select>
-                           <br>
-                           <br>
-                           <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 5. I fidget or squirm with my hands or feet when I have to sit down for a long time.  </label>
-                           <select id="dropdown" class="required" >
-                            <option value="" disabled selected>Select your option</option>
-                             <option value = "Never"> Never </option>
-                             <option value = "Rarely"> Rarely </option>
-                             <option value = "Sometimes "> Sometimes  </option>
-                             <option value = "Often"> Often </option>
-                             <option value = "Very Often">Very Often </option>
-                           </select>
-                         <br>
-                         <br>
-                         <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 6. I feel overly active and compelled to do things, like I’m being driven by a motor. </label>
-                         <select id="dropdown" class="required" >
-                          <option value="" disabled selected>Select your option</option>
-                           <option value = "Never"> Never </option>
-                           <option value = "Rarely"> Rarely </option>
-                           <option value = "Sometimes "> Sometimes  </option>
-                           <option value = "Often"> Often </option>
-                           <option value = "Very Often">Very Often </option>
-                         </select>
-                       <br>
-                       <br>
-                                  
-                                 
-                                   
-                                
-                                 
-                                   </div>
-                                   
+                                    Section 1</h3>
+                                 <h4>Personal Information</h4>
+
+                                 <p>Personal information will be protected by us and used in a consolidated form for
+                                    research, analytical and statistical purposes only.
+                                 </p>
+                                 <h6
+                                    style="color:rgb(0, 0, 0) ;font-family: 'Varela Round', sans-serif;font-size:medium;">
+                                    <b> Your responses, scores and interpretation will be sent to your email ID</b>.
+                                 </h6>
+
+                                 <form id="adhd-survey-form-section2">
+
+                                    <div class="input-headings">
+
+                                       <label for="name" id="name-label"> Name
+                                       </label>
+                                       <input id="name" type="text" name="name" placeholder="Enter your name here"
+                                          class="form-inputs" > </input>
+                                       <br>
+                                       <br>
+                                       <label for="email" id="email-label"><i style="color: rgb(255, 0, 0); ;">*</i>
+                                          Email </label>
+                                       <input id="email" type="email" name="email" placeholder="Enter here"
+                                          class="form-inputs" required> </input>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> Age </label>
+                                       <select id="dropdown"  name="age" class="required" required>
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="age_18"> 18-25 </option>
+                                          <option value="age_26"> 26-35 </option>
+                                          <option value="age_36"> 36-45 </option>
+                                          <option value="age_46"> 46-55 </option>
+                                          <option value="age_56"> Above 55</option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> Gender </label>
+                                       <select name="gender" id="gender" required>
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Model_S"> Male </option>
+                                          <option value="Model_3"> Female </option>
+                                          <option value="Cyber_Truck">Others</option>
+                                       </select>
+
+                                       <br>
+                                       <br>
+
+                                       <label for="features"><i style="color: rgb(255, 0, 0); ;">*</i>
+                                          <b>Function/Domain</b></label>
+                                       <select name="domain" id="domain" required>
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Model_S"> Tech</option>
+                                          <option value="Model_3"> Non-Tech</option>
+
+                                       </select>
+                                       <br>
+
+
+
+
+
+                                    </div>
+                                    <button style="display: none;" type="submit" id="adhd-survey-form-basic-btn"></button>
                                  </form>
-                                                         
-                                                      </div>
+
+                              </div>
                            </div>
-                           <div class="mm-survey-page" data-page="4">
+                           <div id="page3" class="mm-survey-page" data-page="3">
                               <div class="mm-survery-content">
                                  <h3 id="description">
                                     Section 2 </h3>
-                                    <h4>Part B </h4>
-                                    <h6>( Questions 7-12 )</h6>
-                                 
-                                 <form id="survey-form">
-                                 
-                                 <div class="input-headings">
-                                   
-                      
-                                   
-                                 
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i>7. I make careless mistakes when I have to work on a boring or difficult project.  </label>
-                                   <select id="dropdown" class="required" >
-                                    <option value="" disabled selected>Select your option</option>
-                                     <option value = "Never"> Never </option>
-                                     <option value = "Rarely"> Rarely </option>
-                                     <option value = "Sometimes "> Sometimes  </option>
-                                     <option value = "Often"> Often </option>
-                                     <option value = "Very Often">Very Often </option>
-                                   </select>
-                                 <br>
-                                 <br>
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 8. I have difficulty keeping my attention when I’m doing boring or repetitive work. </label>
-                                 <select id="dropdown" class="required" >
-                                  <option value="" disabled selected>Select your option</option>
-                                   <option value = "Never"> Never </option>
-                                   <option value = "Rarely"> Rarely </option>
-                                   <option value = "Sometimes "> Sometimes  </option>
-                                   <option value = "Often"> Often </option>
-                                   <option value = "Very Often">Very Often </option>
-                                 </select>
-                               <br>
-                               <br>
-                               <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 9. I have difficulty concentrating on what people say to me, even when they are speaking to me. </label>
-                               <select id="dropdown" class="required" >
-                                <option value="" disabled selected>Select your option</option>
-                                 <option value = "Never"> Never </option>
-                                 <option value = "Rarely"> Rarely </option>
-                                 <option value = "Sometimes "> Sometimes  </option>
-                                 <option value = "Often"> Often </option>
-                                 <option value = "Very Often">Very Often </option>
-                               </select>
-                             <br>
-                             <br>
-                             <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 10. I misplace or have difficulty finding things at home or at work. </label>
-                             <select id="dropdown" class="required" >
-                              <option value="" disabled selected>Select your option</option>
-                               <option value = "Never"> Never </option>
-                               <option value = "Rarely"> Rarely </option>
-                               <option value = "Sometimes "> Sometimes  </option>
-                               <option value = "Often"> Often </option>
-                               <option value = "Very Often">Very Often </option>
-                             </select>
-                           <br>
-                           <br>
-                           <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 11. I’m distracted by activity or noise around me.</label>
-                           <select id="dropdown" class="required" >
-                            <option value="" disabled selected>Select your option</option>
-                             <option value = "Never"> Never </option>
-                             <option value = "Rarely"> Rarely </option>
-                             <option value = "Sometimes "> Sometimes  </option>
-                             <option value = "Often"> Often </option>
-                             <option value = "Very Often">Very Often </option>
-                           </select>
-                         <br>
-                         <br>
-                         <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 12. I leave my seat in meetings or other situations where I’m expected to remain seated.  </label>
-                         <select id="dropdown" class="required" >
-                          <option value="" disabled selected>Select your option</option>
-                           <option value = "Never"> Never </option>
-                           <option value = "Rarely"> Rarely </option>
-                           <option value = "Sometimes "> Sometimes  </option>
-                           <option value = "Often"> Often </option>
-                           <option value = "Very Often">Very Often </option>
-                         </select>
-                       <br>
-                       <br>
-                                  
-                                 
-                                   
-                                
-                                 
-                                   </div>
-                                   
+                                 <h4>Part A</h4>
+                                 <h6>( Questions 1-6 )</h6>
+
+                                 <form id="adhd-survey-form-section2a">
+
+                                    <div class="input-headings">
+
+
+
+
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 1. I have trouble wrapping up the
+                                          final details of a project, once the challenging parts have been done.
+                                       </label>
+                                       <select name="q1" id="q1" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 2. I have difficulty getting things
+                                          in order when I have to do a task that requires organization. </label>
+                                       <select name="q2" id="q2" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 3. I have problems remembering
+                                          appointments or obligations. </label>
+                                       <select name="q3" id="q3" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 4. When I have a task that requires
+                                          a lot of thought, I avoid or delay getting started.</label>
+                                       <select name="q4" id="q4" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 5. I fidget or squirm with my hands
+                                          or feet when I have to sit down for a long time. </label>
+                                       <select name="q5" id="q5" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 6. I feel overly active and
+                                          compelled to do things, like I’m being driven by a motor. </label>
+                                       <select name="q6" id="q6" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+
+
+
+
+
+                                    </div>
+
                                  </form>
-                                                         
-                                                      </div>
+
+                              </div>
                            </div>
-                           <div class="mm-survey-page" data-page="5">
+                           <div id="page4" class="mm-survey-page" data-page="4">
                               <div class="mm-survery-content">
                                  <h3 id="description">
                                     Section 2 </h3>
-                                    <h4>Part B</h4>
-                                    <h6>( Questions 13-18 )</h6>
-                                 
-                                 <form id="survey-form">
-                                 
-                                 <div class="input-headings">
-                                   
-                      
-                                   
-                                 
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 13. I feel restless or fidgety.  </label>
-                                   <select id="dropdown" class="required" >
-                                    <option value="" disabled selected>Select your option</option>
-                                     <option value = "Never"> Never </option>
-                                     <option value = "Rarely"> Rarely </option>
-                                     <option value = "Sometimes "> Sometimes  </option>
-                                     <option value = "Often"> Often </option>
-                                     <option value = "Very Often">Very Often </option>
-                                   </select>
-                                 <br>
-                                 <br>
-                                 <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 14. I have difficulty unwinding and relaxing when I have time to myself. </label>
-                                 <select id="dropdown" class="required" >
-                                  <option value="" disabled selected>Select your option</option>
-                                   <option value = "Never"> Never </option>
-                                   <option value = "Rarely"> Rarely </option>
-                                   <option value = "Sometimes "> Sometimes  </option>
-                                   <option value = "Often"> Often </option>
-                                   <option value = "Very Often">Very Often </option>
-                                 </select>
-                               <br>
-                               <br>
-                               <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 15. I find myself talking too much when I’m in social situations. </label>
-                               <select id="dropdown" class="required" >
-                                <option value="" disabled selected>Select your option</option>
-                                 <option value = "Never"> Never </option>
-                                 <option value = "Rarely"> Rarely </option>
-                                 <option value = "Sometimes "> Sometimes  </option>
-                                 <option value = "Often"> Often </option>
-                                 <option value = "Very Often">Very Often </option>
-                               </select>
-                             <br>
-                             <br>
-                             <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 16. When I’m in a conversation, I find myself finishing sentences of people I’m talking to, before they can finish them themselves. </label>
-                             <select id="dropdown" class="required" >
-                              <option value="" disabled selected>Select your option</option>
-                               <option value = "Never"> Never </option>
-                               <option value = "Rarely"> Rarely </option>
-                               <option value = "Sometimes "> Sometimes  </option>
-                               <option value = "Often"> Often </option>
-                               <option value = "Very Often">Very Often </option>
-                             </select>
-                           <br>
-                           <br>
-                           <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 17. I have difficulty waiting for my turn in situations when turn taking is required.  </label>
-                           <select id="dropdown" class="required" >
-                            <option value="" disabled selected>Select your option</option>
-                             <option value = "Never"> Never </option>
-                             <option value = "Rarely"> Rarely </option>
-                             <option value = "Sometimes "> Sometimes  </option>
-                             <option value = "Often"> Often </option>
-                             <option value = "Very Often">Very Often </option>
-                           </select>
-                         <br>
-                         <br>
-                         <label for="dropdown" id="model" style="width: 90vw;"><i style="color: rgb(255, 0, 0); ;">*</i> 18. I interrupt others when they are busy. </label>
-                         <select id="dropdown" class="required" >
-                          <option value="" disabled selected>Select your option</option>
-                           <option value = "Never"> Never </option>
-                           <option value = "Rarely"> Rarely </option>
-                           <option value = "Sometimes "> Sometimes  </option>
-                           <option value = "Often"> Often </option>
-                           <option value = "Very Often">Very Often </option>
-                         </select>
-                       <br>
-                       <br>
-                    
-                                  
-                                 
-                                   
-                                
-                                 
-                                   </div>
-                                   
+                                 <h4>Part B </h4>
+                                 <h6>( Questions 7-12 )</h6>
+
+                                 <form id="adhd-survey-form-section2b">
+
+                                    <div class="input-headings">
+
+
+
+
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">* </i>7. I make careless mistakes when I
+                                          have to work on a boring or difficult project. </label>
+                                       <select name="q7" id="q7" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 8. I have difficulty keeping my
+                                          attention when I’m doing boring or repetitive work. </label>
+                                       <select name = "q8" id="q8" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 9. I have difficulty concentrating
+                                          on what people say to me, even when they are speaking to me. </label>
+                                       <select id="q9" name = "q9" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 10. I misplace or have difficulty
+                                          finding things at home or at work. </label>
+                                       <select id="q10" name = "q10" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 11. I’m distracted by activity or
+                                          noise around me.</label>
+                                       <select id="q11" name = "q11" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 12. I leave my seat in meetings or
+                                          other situations where I’m expected to remain seated. </label>
+                                       <select id="q12"  name = "q12" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+
+
+
+
+
+                                    </div>
+
                                  </form>
-                                                         
-                                                      </div>
+
+                              </div>
                            </div>
-                           <div class="mm-survey-page" data-page="6">
+                           <div id="page5" class="mm-survey-page" data-page="5">
+                              <div class="mm-survery-content">
+                                 <h3 id="description">
+                                    Section 2 </h3>
+                                 <h4>Part B</h4>
+                                 <h6>( Questions 13-18 )</h6>
+
+                                 <form id="adhd-survey-form-section2b2">
+
+                                    <div class="input-headings">
+
+
+
+
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 13. I feel restless or fidgety.
+                                       </label>
+                                       <select id="q13" name = "q13" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 14. I have difficulty unwinding and
+                                          relaxing when I have time to myself. </label>
+                                       <select id="q14" name = "q14" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 15. I find myself talking too much
+                                          when I’m in social situations. </label>
+                                       <select id="q15" name = "q15" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 16. When I’m in a conversation, I
+                                          find myself finishing sentences of people I’m talking to, before they can
+                                          finish them themselves. </label>
+                                       <select id="q16" name = "q16" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 17. I have difficulty waiting for my
+                                          turn in situations when turn taking is required. </label>
+                                       <select id="q17" name = "q17" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+                                       <label for="dropdown" id="model" style="width: 90vw;"><i
+                                             style="color: rgb(255, 0, 0); ;">*</i> 18. I interrupt others when they are
+                                          busy. </label>
+                                       <select id="q18" name = "q18" class="required">
+                                          <option value="" disabled selected>Select your option</option>
+                                          <option value="Never"> Never </option>
+                                          <option value="Rarely"> Rarely </option>
+                                          <option value="Sometimes "> Sometimes </option>
+                                          <option value="Often"> Often </option>
+                                          <option value="Very Often">Very Often </option>
+                                       </select>
+                                       <br>
+                                       <br>
+
+
+
+
+
+
+                                    </div>
+
+                                 </form>
+
+                              </div>
+                           </div>
+                           <div id="page6" class="mm-survey-page" data-page="6">
                               <div class="mm-survery-content">
                                  <h3 id="description">
                                     Disclaimer</h3>
-                                    <p>This self assessment is not a diagnostic tool. It is a pre-diagnostic tool. It identifies traits and describes symptoms of the condition. </p>
-                                    <p>The assessment is adapted from the Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist that was developed by World Health Organization (WHO) in conjunction with the Workgroup on Adult ADHD (Lenard Adler, MD - New York University Medical School, Ronald C. Kessler, PhD - Harvard Medical School and Thomas Spencer, MD - Harvard Medical School). </p>
-                                    <p>Orchvate protects and manages information shared on this site. No personal information, responses or scores are shared with any third party without your consent. Consolidated data is used only for Research, Analytics and Statistical purposes. </p>
-                                    <p>If you have any concerns or questions please contact us at info@orchvate.com</p>
+                                 <p>This self assessment is not a diagnostic tool. It is a pre-diagnostic tool. It
+                                    identifies traits and describes symptoms of the condition. </p>
+                                 <p>The assessment is adapted from the Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom
+                                    Checklist that was developed by World Health Organization (WHO) in conjunction with
+                                    the Workgroup on Adult ADHD (Lenard Adler, MD - New York University Medical School,
+                                    Ronald C. Kessler, PhD - Harvard Medical School and Thomas Spencer, MD - Harvard
+                                    Medical School). </p>
+                                 <p>Orchvate protects and manages information shared on this site. No personal
+                                    information, responses or scores are shared with any third party without your
+                                    consent. Consolidated data is used only for Research, Analytics and Statistical
+                                    purposes. </p>
+                                 <p>If you have any concerns or questions please contact us at info@orchvate.com</p>
                                  </br>
-                              </br>
-                                    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions</input>
-                                 
-                                 <form id="survey-form">
-                                 
-                                 <div class="input-headings">
-                                    <div class = "questions">
+                                 </br>
+                                 <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" required> I Agree to
+                                 Terms & Conditions</input>
 
-                                       <div class="col-md-4"></div>
-                                       <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
-                                             <button id="assessScore" onclick="calculateAutismScore()" class="main-btn">Evaluate</button>
-                                             <button id="reAssessScore" onclick="reEvaluateAutismScore()" style="display: none;" class="main-btn">Re-evaluate</button>
+                                 <form id="adhd-survey-form-section6">
+
+                                    <div class="input-headings">
+                                       <div class="questions">
+
+                                          <div class="col-md-4"></div>
+                                          <div class="col-md-4" style="margin-bottom:2%;text-align: center;">
+                                             <button id="assessScore" onclick="calculateAutismScore()"
+                                                class="main-btn">Evaluate</button>
+                                             <button id="reAssessScore" onclick="reEvaluateAutismScore()"
+                                                style="display: none;" class="main-btn">Re-evaluate</button>
+                                          </div>
+                                          <div class="col-md-4"></div>
+                                          <div id="scoringMethodology" style="display: none;clear:both;">
+                                             <hr>
+                                             <h3>Scores</h3>
+                                             <div class="col-md-12">
+                                                <label for="score">Your Score:</label><input type="text" id="score"
+                                                   name="score" disabled>
+                                                <br>
+                                                <p style="clear:both"> Interpretaion of the scores: </p>
+                                                <img class="center" src="scoring_2.png"></img>
+                                             </div>
+
+                                             <br>
+                                          </div>
                                        </div>
-                                       <div class="col-md-4"></div>
-                                       <div id="scoringMethodology" style="display: none;clear:both;">
-                                          <hr>
-                                          <h3>Scores</h3>
-                                          <div class="col-md-12">
-                                       <label for="score">Your Score:</label><input type="text" id="score" name="score" disabled>
+
+
+
+
                                        <br>
-                                       <p style="clear:both"> Interpretaion of the scores: </p>
-                                          <img class="center" src = "scoring_2.png"></img>
-                                       </div>
-                                         
-                                          <br>
-                                       </div>
-                                       </div>
-                      
-                                   
-                                 
-                                 
-                       <br>
-                       <br>
-                       
-                                  
-                                 
-                                   
-                                
-                                 
-                                   </div>
-                                   
+                                       <br>
+
+
+
+
+
+
+                                    </div>
+
                                  </form>
-                                                         
-                                                      </div>
-                           </div>
-                           <!-- <div class="mm-survey-page" data-page="5">
-                              <div class="mm-survery-content">
-         
+
                               </div>
                            </div>
-                           <div class="mm-survey-page" data-page="6">
-                              <div class="mm-survery-content">
-         
-                              </div>
-                           </div>
-                           <div class="mm-survey-page" data-page="7">
-                              <div class="mm-survery-content">
-         
-                              </div>
-                           </div> -->
-         
+
                         </div>
-         
+
                         <div class="mm-survey-controller">
                            <div class="mm-prev-btn">
-                              <button>Prev</button>
+                              <button id="prev-btn">Prev</button>
                            </div>
-                           <div class="mm-next-btn" onclick="validateInput()">
-                              <button >Next</button>
+                           <div class="mm-next-btn">
+                              <button id="next-btn">Next</button>
                            </div>
                            <div class="mm-finish-btn">
-                              <button>Submit</button>
+                              <button  type="submit">Submit</button>
                            </div>
                         </div>
                      </div>
@@ -556,12 +619,76 @@
    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" ></script>
    <script type="text/javascript" src="../js/main.js"></script>
    <script type="text/javascript" src="../js/adhdQuestionnaire.js"></script>
    <script>
-      $(document).ready(function(){
-      setAutismQuestionnaire();
+      $(document).ready(function () {
+         setAutismQuestionnaire();
       });
    </script>
+   <script>
+      
+      $("document").ready(($event) => {
+         // $("#next-btn").click(function() {
+         //    current_page = current_page + 1;
+         //    var form_id = page_map[current_page];
+         //    $(`#${form_id}`).trigger("submit");
+         // });
+         // $("#prev-btn").click(function() {
+         //    current_page = current_page - 1;
+         //    $('#adhd-survey-form-basic-btn').click(function() {
+         //       console.log("abc")
+         //    })
+         // });
+         // $("#adhd-survey-form-section2").validate({
+         //    rules: {
+         //       name: {
+         //          required: true,
+         //          // Using the normalizer to trim the value of the element
+         //          // before validating it.
+         //          //
+         //          // The value of `this` inside the `normalizer` is the corresponding
+         //          // DOMElement. In this example, `this` references the `username` element.
+         //          normalizer: function(value) {
+         //             return $.trim(value);
+         //          }
+         //       },
+         //       email: {
+         //          required: true,
+         //          normalizer: function(value) {
+         //             return $.trim(value);
+         //          }
+         //       },
+         //       age: {
+         //          required: true,
+         //          normalizer: function(value) {
+         //             return $.trim(value);
+         //          }
+         //       },
+         //       gender: {
+         //          required: true,
+         //          normalizer: function(value) {
+         //             return $.trim(value);
+         //          }
+         //       },
+         //       domain: {
+         //          required: true,
+         //          normalizer: function(value) {
+         //             return $.trim(value);
+         //          }
+         //       }
+         //    },
+         //    submitHandler: function(form) {
+         //       // some other code
+         //       // maybe disabling submit button
+         //       // then:
+         //       // $(form).submit();
+         //       console.log("Hi")
+         //    }
+         // });
+      })
+   </script>
 </body>
+
 </html>
