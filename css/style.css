@@ -2243,3 +2243,12 @@ input[type="radio"]:checked + label span {
     margin-bottom: 0rem;
     
 }
+
+@media screen and (max-width: 560px) {
+    .modal-content {
+        width: 100%;
+    }
+    .score-div > span:first-child {
+        flex: 1;
+    }
+}
