@@ -123,9 +123,9 @@ var page_btn_map = {
  var adhd_page_map = {
 	0: "",
 	1: "adhd-survey-form-section2",
-	2: "adhd-survey-form-section2a",
-	3: "adhd-survey-form-section2b",
-	4: "adhd-survey-form-section2b2",
+	2: "adhd-survey-form-section3",
+	3: "adhd-survey-form-section4",
+	4: "adhd-survey-form-section5",
 	5: "adhd-survey-form-section6"
  }
  var autism_page_map = {
@@ -286,7 +286,7 @@ $(document).ready(function() {
 			return false;
 		}
 	});
-	$("#adhd-survey-form-section2a").validate({
+	$("#adhd-survey-form-section3").validate({
 		rules: {
 			q1: {
 				required: true,
@@ -319,7 +319,7 @@ $(document).ready(function() {
 			goToPrev();
 		}
 	});
-	$("#adhd-survey-form-section2b").validate({
+	$("#adhd-survey-form-section4").validate({
 		rules: {
 			q7: {
 				required: true,
@@ -348,7 +348,7 @@ $(document).ready(function() {
 			console.log("Hi")
 		}
 	});
-	$("#adhd-survey-form-section2b2").validate({
+	$("#adhd-survey-form-section5").validate({
 		rules: {
 			q13: {
 				required: true,
@@ -802,7 +802,129 @@ $(document).ready(function() {
 
 		
 	});
-})
+});
+
+let adhd_score_interpretations = [[{
+		min: 0,
+		max: 0,
+		text: "No ADHD traits"
+	},
+	{
+		min: 1,
+		max: 2,
+		text: "Mild ADHD traits"
+	},
+	{
+		min: 3,
+		max: 3,
+		text: "Moderate ADHD traits"
+	},
+	{
+		min: 4,
+		max: 6,
+		text: "Strong ADHD traits"
+	}],[{
+		min: 0,
+		max: 0,
+		text: "You do not exhibit any ADHD symptoms"
+	},
+	{
+		min: 1,
+		max: 4,
+		text: "You exhibit few ADHD symptoms"
+	},
+	{
+		min: 5,
+		max: 8,
+		text: "You exhibit some ADHD symptoms"
+	},
+	{
+		min: 9,
+		max: 12,
+		text: "You exhibit many ADHD symptoms"
+	}] 
+
+]
+
+let autism_score_interpretations = [
+	[{
+		min: 0,
+		max: 11,
+		text: "No tendency at all towards autistic traits"
+	},
+	{
+		min: 12,
+		max: 21,
+		text: "Average result that people get (women average around 15 and men around 17)"
+	},
+	{
+		min: 22,
+		max: 25,
+		text: "Autistic tendencies slightly above the population average"
+	},
+	{
+		min: 26,
+		max: 31,
+		text: "Borderline indication of autism, or mild autism"
+	},
+	{
+		min: 32,
+		max: 50,
+		text: "Strong likelihood of autism"
+	}
+]
+]
+
+function saveAndCalculateScore(form_type) {
+	let serialized_data = {FormType: form_type}
+	let user_form_id = form_type === 0 ? "#adhd-survey-form-section2" : "#autism-survey-form-section2";
+	let user_data = $(user_form_id).serializeArray();
+	let user_details = {};
+	user_data.forEach((ud) => user_details[ud.name] = ud.value);
+	let responses = [];
+	// let start = form_type === 0 ? 2 : 
+	let end = form_type === 0 ? 7 : 13;
+	for(var i=3; i<end; i++) {
+		var data = $(`#adhd-survey-form-section${i}`).serializeArray();
+		responses = [...responses, ...data.map((d) => d.value)];
+	}
+	console.log("serialized-data", serialized_data);
+	serialized_data['Responses'] = responses;
+	serialized_data['UserDetails'] = user_details;
+	$.ajax(
+		{
+			type: 'POST',
+			url: "https://orchvatefunctionappsassessmentvalidation.azurewebsites.net/api/AssessmentValidationAndScoringFunction?code=Bc-eGlqCLDZeLY7OVtfZpnXzAkt1TgZ6r7hmZ_lWFqwvAzFutxoK9A==",
+			data: JSON.stringify(serialized_data),
+    		contentType : 'application/json',
+			dataType : 'json',
+			success: function(res) {
+				console.log(res);
+				var container_ids = form_type === 0 ? ['#part-a-score', '#part-b-score'] : ["#assessment-score"];
+				if (res.statusCode == 200) {
+					res.value.forEach((v, index) => {
+						$(container_ids[index]).html(v);
+					});
+					var interpretations_obj = form_type === 0 ? adhd_score_interpretations : autism_score_interpretations;
+					var container_desc_ids = form_type === 0 ? ['#part-a-description', '#part-b-description'] : ["#part-description"];
+					res.value.forEach((v, index) => {
+						let desc_obj = interpretations_obj[index].find((inter) => {
+							if (v >= inter.min && v <= inter.max) {
+								return true;
+							}
+							return false;
+						})
+						$(container_desc_ids[index]).html(desc_obj.text);
+					});
+
+				
+
+				}
+			}
+
+	})
+
+}
 
 
 
