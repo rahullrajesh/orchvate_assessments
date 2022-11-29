@@ -1,5 +1,8 @@
 (function ($) {
 	"use strict"
+	console.log = () => {}
+	console.error = () => {}
+
 
 	///////////////////////////
 	// Preloader
@@ -240,17 +243,19 @@ function goToPrev() {
 	
 
 }
-
+// goToNext();
 $(document).ready(function() {
 	$.validator.setDefaults({
 		submitHandler: function() {
-			alert("Submitted!");
+			// alert("Submitted!");
 		}
 	});
 	$("#adhd-survey-form-section2").validate({
 		rules: {
 			email: {
 				required: true,
+				email: true,
+				customEmail: true,
 				normalizer: function (value) {
 					return $.trim(value);
 				}
@@ -275,15 +280,6 @@ $(document).ready(function() {
 			}
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
-			return false;
 		}
 	});
 	$("#adhd-survey-form-section3").validate({
@@ -309,14 +305,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#adhd-survey-form-section4").validate({
@@ -341,11 +329,6 @@ $(document).ready(function() {
 			},
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi")
 		}
 	});
 	$("#adhd-survey-form-section5").validate({
@@ -370,58 +353,10 @@ $(document).ready(function() {
 			},
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			$(form).submit();
-			//console.log("Hi")
 		}
 	});
 	$("#adhd-survey-form-section6").validate({
-		rules: {
-			name: {
-				required: true,
-				// Using the normalizer to trim the value of the element
-				// before validating it.
-				//
-				// The value of `this` inside the `normalizer` is the corresponding
-				// DOMElement. In this example, `this` references the `username` element.
-				normalizer: function (value) {
-					return $.trim(value);
-				}
-			},
-			email: {
-				required: true,
-				normalizer: function (value) {
-					return $.trim(value);
-				}
-			},
-			age: {
-				required: true,
-				normalizer: function (value) {
-					return $.trim(value);
-				}
-			},
-			gender: {
-				required: true,
-				normalizer: function (value) {
-					return $.trim(value);
-				}
-			},
-			domain: {
-				required: true,
-				normalizer: function (value) {
-					return $.trim(value);
-				}
-			}
-		},
-		// submitHandler: function (form) {
-		// 	// some other code
-		// 	// maybe disabling submit button
-		// 	// then:
-		// 	// $(form).submit();
-		// 	console.log("Hi")
-		// }
+		rules: {}
 	});
 
 
@@ -430,6 +365,8 @@ $(document).ready(function() {
 		rules: {
 			email: {
 				required: true,
+				email: true,
+				customEmail: true,
 				normalizer: function (value) {
 					return $.trim(value);
 				}
@@ -454,15 +391,6 @@ $(document).ready(function() {
 			}
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
-			return false;
 		}
 	});
 	$("#autism-survey-form-section3").validate({
@@ -485,14 +413,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section4").validate({
@@ -515,14 +435,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section5").validate({
@@ -545,14 +457,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section6").validate({
@@ -575,14 +479,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section7").validate({
@@ -605,14 +501,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section8").validate({
@@ -635,14 +523,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section9").validate({
@@ -665,14 +545,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section10").validate({
@@ -695,14 +567,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section11").validate({
@@ -725,14 +589,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	$("#autism-survey-form-section12").validate({
@@ -755,14 +611,6 @@ $(document).ready(function() {
 	
 		},
 		submitHandler: function (form) {
-			// some other code
-			// maybe disabling submit button
-			// then:
-			// $(form).submit();
-			console.log("Hi");
-			goToNext();
-			// else
-			goToPrev();
 		}
 	});
 	jQuery('.mm-next-btn').on('click', function () {
@@ -787,18 +635,27 @@ $(document).ready(function() {
 		
 	});
 	jQuery('.mm-prev-btn').on('click', function () {
+		if (current_page < 0) {
+			return;
+		}
 		current_page = current_page - 1;
+		
 		var form_id = page_map[current_page];
-		$(`#${form_id}`).trigger("submit");
+		if (form_id) {
+			$(`#${form_id}`).trigger("submit");
 
-		if (!$(`#${form_id}`).valid()) {
-			// alert("sorry please correct form!");
-			current_page = current_page + 1;
-			return false;
+			if (!$(`#${form_id}`).valid()) {
+				// alert("sorry please correct form!");
+				current_page = current_page + 1;
+				return false;
+			} else {
+				goToPrev();
+			}
+			$(`#${form_id}`).trigger("submit");
 		} else {
 			goToPrev();
 		}
-		$(`#${form_id}`).trigger("submit");
+		
 
 		
 	});
@@ -876,8 +733,20 @@ let autism_score_interpretations = [
 ]
 
 function saveAndCalculateScore(form_type) {
+	var terms_checked = false;
+	terms_checked = $('#terms').is(":checked");
+	if (!terms_checked) {
+		$("#terms-error").show();
+		return;
+	} else {
+		$("#terms-error").hide();
+	}
+
+	
+
 	let serialized_data = {FormType: form_type}
 	let user_form_id = form_type === 0 ? "#adhd-survey-form-section2" : "#autism-survey-form-section2";
+	let form_id = form_type === 0 ? "#adhd-survey-form-section" : "#autism-survey-form-section"
 	let user_data = $(user_form_id).serializeArray();
 	let user_details = {};
 	user_data.forEach((ud) => user_details[ud.name] = ud.value);
@@ -885,12 +754,13 @@ function saveAndCalculateScore(form_type) {
 	// let start = form_type === 0 ? 2 : 
 	let end = form_type === 0 ? 7 : 13;
 	for(var i=3; i<end; i++) {
-		var data = $(`#adhd-survey-form-section${i}`).serializeArray();
+		var data = $(`${form_id}${i}`).serializeArray();
 		responses = [...responses, ...data.map((d) => d.value)];
 	}
 	console.log("serialized-data", serialized_data);
 	serialized_data['Responses'] = responses;
 	serialized_data['UserDetails'] = user_details;
+	$("#preloader").delay(600).fadeIn();
 	$.ajax(
 		{
 			type: 'POST',
@@ -899,7 +769,9 @@ function saveAndCalculateScore(form_type) {
     		contentType : 'application/json',
 			dataType : 'json',
 			success: function(res) {
-				console.log(res);
+				$("#preloader").delay(600).fadeOut();
+				
+				// console.log(res);
 				var container_ids = form_type === 0 ? ['#part-a-score', '#part-b-score'] : ["#assessment-score"];
 				if (res.statusCode == 200) {
 					res.value.forEach((v, index) => {
@@ -918,8 +790,12 @@ function saveAndCalculateScore(form_type) {
 					});
 
 				
-
+					$('#myModal').modal("show");
 				}
+			},
+			error: function(res) {
+				$("#preloader").delay(600).fadeOut();
+				alert("Was unable to save the data! Please try again later.")
 			}
 
 	})
@@ -1178,3 +1054,8 @@ function onError(input, message) {
 function isValidEmail(email) {
 	return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+jQuery.validator.addMethod("customEmail", function(value, element) {
+	// allow any non-whitespace characters as the host part
+	return this.optional( element ) || isValidEmail(value);
+  }, 'Please enter a valid email address.');
